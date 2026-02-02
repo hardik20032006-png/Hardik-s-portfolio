@@ -22,10 +22,10 @@
 </header>
 
 <section class="hero" id="about">
-    <div class="hero-image">
+    <div class="hero-image  reveal reveal-zoom">
         <img src="image.png" alt="Profile Image">
     </div>
-    <div class="hero-box">
+    <div class="hero-box reveal">
         <h2>About Me</h2>
         <p>
             I’m Hardik, a B.Tech CSE student at Quantum University with a strong interest in programming, problem-solving, and understanding how technology works at a deeper level. I enjoy exploring the logic behind code, systems, and algorithms, and I believe learning is about building real skills, not just earning degrees.
@@ -39,27 +39,27 @@ Currently, I’m strengthening my foundation in computer science by learning pro
     <h2 class="section-title">Skills</h2>
 
     <div class="skills-container">
-        <div class="skill-card">
+        <div class="skill-card reveal">
             <h3>C++ & DSA</h3>
             <p>Strong foundation in C++, data structures, and problem-solving.</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card reveal">
             <h3>Python</h3>
             <p>Basic to intermediate knowledge for scripting and logic building.</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card reveal">
             <h3>Web Development</h3>
             <p>HTML, CSS, and JavaScript for building clean, responsive user interfaces.</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card reveal">
             <h3>UI / UX Basics</h3>
             <p>Understanding layout, spacing, typography, and user experience.</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card reveal">
             <h3>Canva</h3>
             <p>Designing clean visuals, presentations, and basic UI assets.</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card reveal">
             <h3>Advanced Excel</h3>
             <p>Working with formulas, functions, data analysis, and spreadsheets to organize and interpret information efficiently.</p>
         </div>
@@ -69,7 +69,7 @@ Currently, I’m strengthening my foundation in computer science by learning pro
 <section class="projects" id="projects">
     <h2 class="section-title">Projects</h2>
     <div class="projects-container">
-        <div class="project-card">
+        <div class="project-card reveal">
             <div class="project-image">
                 <img src="hostel lost and found.png" alt="Project Image">
             </div>
@@ -79,7 +79,7 @@ Currently, I’m strengthening my foundation in computer science by learning pro
             </p>
             <a href="https://hardik20032006-png.github.io/Hostel-Lost-Found/index.html" target="_blank" class="project-btn">Visit</a>
         </div>
-        <div class="project-card">
+        <div class="project-card reveal">
             <div class="project-image">
                 <img src="cs.jpeg" alt="Project Image">
             </div>
@@ -90,7 +90,7 @@ Currently, I’m strengthening my foundation in computer science by learning pro
             </p>
             <a href="#" class="project-btn">Visit</a>
         </div>
-        <div class="project-card">
+        <div class="project-card reveal">
             <div class="project-image">
                 <img src="cs.jpeg" alt="Project Image">
             </div>
@@ -107,7 +107,7 @@ Currently, I’m strengthening my foundation in computer science by learning pro
 <section class="contact-section" id="contact">
   <div class="contact-wrapper">
 
-    <div class="contact-box">
+    <div class="contact-box reveal reveal-left">
       <h2>Contact</h2>
 
       <div class="contact-item">
@@ -139,7 +139,7 @@ Currently, I’m strengthening my foundation in computer science by learning pro
       </div>
     </div>
 
-   <div class="contact-box">
+   <div class="contact-box reveal reveal-right">
   <h2>Coding Profiles</h2>
 
   <div class="contact-item">
@@ -168,6 +168,24 @@ Currently, I’m strengthening my foundation in computer science by learning pro
         window.scrollTo(0, 0);
         history.replaceState(null, null, window.location.pathname);
     }
+
+    const reveals = document.querySelectorAll(".reveal");
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target); // animate once
+        }
+      });
+    },
+    {
+      threshold: 0.1
+    }
+  );
+
+  reveals.forEach(el => observer.observe(el));
 </script>
 
 </body>
