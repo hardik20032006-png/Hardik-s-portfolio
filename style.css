@@ -172,7 +172,7 @@ body {
     transform: translateY(-8px);
 }
 .project-image img {
-    width: 140px;
+    width: 260px;
     height: 140px;
     object-fit: cover;
     border-radius: 12px;
