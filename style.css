@@ -11,12 +11,16 @@ body {
     color: #e5e7eb;
     font-family: Arial, Helvetica, sans-serif;
 }
+#vanta-bg {
+    min-height: 100vh;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 32px 90px;
     border-bottom: 3px solid rgba(0, 255, 156, 0.18);
+    background-color: rgba(11, 15, 14, 0.7);
 }
 .nav-left {
     display: flex;
@@ -88,6 +92,7 @@ body {
     text-align: center;
     border: 3px solid rgba(0, 255, 156, 0.3);
     border-radius: 12px;
+    background-color: rgba(11, 15, 14, 0.7);
 }
 .hero-box h2 {
     font-size: 34px;
@@ -122,6 +127,7 @@ body {
     border-radius: 14px;
     text-align: center;
     transition: all 0.3s ease;
+    background-color: rgba(11, 15, 14, 0.7);
 }
 .skill-card:hover{
      box-shadow:
@@ -164,6 +170,7 @@ body {
     border-radius: 18px;
     text-align: center;
     transition: all 0.4s ease;
+    background-color: rgba(11, 15, 14, 0.7);
 }
 .project-card:hover {
     box-shadow:
@@ -219,6 +226,7 @@ body {
     border-radius: 18px;
     text-align: center;
     margin-top: -20px;
+    background-color: rgba(11, 15, 14, 0.7);
 }
 .contact-box h2 {
     font-size: 36px;
