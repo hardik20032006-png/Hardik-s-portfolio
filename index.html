@@ -6,7 +6,7 @@
     <title>Hardik's portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body">
+<body class="body" id="vanta-bg">
     <header>
     <nav class="navbar">
         <div class="logo">Hardik</div>
@@ -160,33 +160,14 @@ Currently, I’m strengthening my foundation in computer science by learning pro
 </section>
 
 <footer class="footer">
-    © 2026 Hardik | Built with HTML & CSS
+    © 2026 Hardik | Built with HTML,CSS & Javascript
 </footer>
 
-   <script>
-    if (window.location.hash) {
-        window.scrollTo(0, 0);
-        history.replaceState(null, null, window.location.pathname);
-    }
+<!-- Vanta JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 
-    const reveals = document.querySelectorAll(".reveal");
 
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-          observer.unobserve(entry.target); // animate once
-        }
-      });
-    },
-    {
-      threshold: 0.1
-    }
-  );
-
-  reveals.forEach(el => observer.observe(el));
-</script>
-
+<script src="protfolio.js"></script>
 </body>
 </html>
