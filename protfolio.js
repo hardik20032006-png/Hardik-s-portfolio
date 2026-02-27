@@ -30,12 +30,15 @@ VANTA.NET({
   mouseControls: true,
   touchControls: true,
   gyroControls: false,
-  minHeight: 200.0,
-  minWidth: 200.0,
-  scale: 1.0,
-  scaleMobile: 1.0,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
   color: 0x00ff9c,
-  backgroundColor: 0x0b0f0e
+  backgroundColor: 0x0b0f0e,
+  points: 12.00,       // dense
+  maxDistance: 12.00,  // reduce long stretching lines
+  spacing: 12.00       // tighter grouping
 });
 
 
