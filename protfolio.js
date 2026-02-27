@@ -34,11 +34,12 @@ VANTA.NET({
   minWidth: 200.00,
   scale: 1.00,
   scaleMobile: 1.00,
-  color: 0x00ff9c,
-  backgroundColor: 0x0b0f0e,
-  points: 12.00,       // dense
-  maxDistance: 12.00,  // reduce long stretching lines
-  spacing: 12.00       // tighter grouping
+  color: 0x38bdf8,
+  backgroundColor: 0x0f172a,
+  points: 10.00,
+  maxDistance: 12.00,
+  spacing: 15.00
 });
+
 
 
