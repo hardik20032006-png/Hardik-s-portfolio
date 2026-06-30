@@ -42,4 +42,13 @@ VANTA.NET({
 });
 
 
+document.getElementById("viewResumeBtn").addEventListener("click", () => {
+    window.open("https://drive.google.com/file/d/1fiAPi2e5SVUlH7mE3BZIEIIwOB1BtJkM/view", "_blank");
+});
+
+document.getElementById("downloadResumeBtn").addEventListener("click", () => {
+    window.open("https://drive.google.com/uc?export=download&id=1fiAPi2e5SVUlH7mE3BZIEIIwOB1BtJkM");
+});
+
+
 
