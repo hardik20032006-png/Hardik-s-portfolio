@@ -220,6 +220,7 @@ body {
 }
 .project-btn {
     display: inline-block;
+    margin: 3px;
     margin-top: 25px;
     padding: 12px 44px;
     border: 2px solid #00ff9c;
